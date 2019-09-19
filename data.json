@@ -1,0 +1,21 @@
+{"project": [
+    {"id": 0,
+    "project_name": "A Random Quote Generator",
+    "description":" a program that displays a randomly selected quote each time the user clicks a button.",
+    "technologies":
+    "live_link":
+    "github_link":
+    "image_urls": ["static_node_and_express_site-v1"],
+
+
+}
+1-List Pagination and Filtering
+write JavaScript to divide a long list into a series of "pages" and improve the user experience of a web page.
+2-Interactive Form
+enhance a form so that it’s engaging, interactive, and easy to use.
+3-OOP Game Show App
+A player tries to guess the phrase by selecting individual letters from an onscreen keyboard.
+4-Public API Requests
+Using JavaScript, you’ll create an employee directory by communicating with a third-party API 
+
+]
