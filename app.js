@@ -15,9 +15,9 @@ app.get('/about', (req,res) => {
 app.get('/project', (req,res) => {
     res.render('project', { project: myjson});
 });
+
 //error handler for 404 error
 app.use((req, res, next) => {
-
     const err = new Error('Oh no, there has been a mistake!');
     err.status = 404;
     next(err);

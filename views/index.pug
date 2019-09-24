@@ -11,23 +11,21 @@ block content
       //- Add a description for your portfolio, what this project is, it's purpose, what it's supposed to accomplish, etc. 
       p.lead.text-light
         //| Portfolio Description
-        This project is to show the previous work that was done on the other projects. 
-        It also contain pages for contact information, a brief des
+        |This project is to show the previous work that was done in other projects. 
+        |It also contain pages for contact information and a brief description about myself and my elevator pitch.
   article.grid-container.portfolio-index
     
     .grid-x.grid-margin-x.small-up-2.medium-up-2.large-up-3
 
-      ul 
-        each project in projects
-          li= Project
+    
       //- Use the Pug `each` iterator to create a project img, title and link in the markup for each of the projects you are showcasing.  
       
       //- Use a combination of interpolation and template literals as needed to dynamically generate the the routes in the href, as well as the img's src and the projects title.
       
       //- Here's what the Pug for each project example should look like. 
-
-      .cell
-        a(href='#')
-          img.thumbnail(src='https://placehold.it/550x550')
-          h5 Title
+      each project in projects
+       .cell
+         a(href='/projects/'+ project.id)
+          img.thumbnail(src='' + project.thumbnail)
+          h5 #{project.project_name}
       

@@ -5,6 +5,7 @@
      "project_name": "A Random Quote Generator",
      "description":" a program that displays a randomly selected quote each time the user clicks a button.",
      "technologies":["javascript", "css", "html"],
+     "thumbnail": "public/img/project_1.png",
      "live_link":"https://wilcapre.github.io/tech_project1/",
      "github_link":"https://github.com/wilcapre/tech_project1",
      "image_urls": ["public/img/project_1.png",
