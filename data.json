@@ -4,46 +4,66 @@
     {"id": 0,           
      "project_name": "A Random Quote Generator",
      "description":" a program that displays a randomly selected quote each time the user clicks a button.",
-     "technologies":"",
+     "technologies":["javascript", "css", "html"],
      "live_link":"https://wilcapre.github.io/tech_project1/",
      "github_link":"https://github.com/wilcapre/tech_project1",
-     "image_urls": ["public/img/project_1.png"]
+     "image_urls": ["public/img/project_1.png",
+                    "public/img/project_2.png",
+                    "public/img/project_3.png",
+                    "public/img/project_4.png"
+                   ]
 
     }, 
     {"id": 1,       
      "project_name": "List Pagination and Filtering",
      "description": "write JavaScript to divide a long list into a series of 'pages' and improve the user experience of a web page.",
-     "technologies": "",
+     "technologies": ["javascript", "css", "html"],
      "live_link":"https://wilcapre.github.io/project2/",
      "github_link":"https://github.com/wilcapre/project2",
-     "image_urls": ["public/img/project_2.png"]
+     "image_urls": ["public/img/project_2.png",
+                    "public/img/project_3.png",
+                    "public/img/project_4.png",
+                    "public/img/project_5.png"
+                    ]
     },
 
     {"id": 2,       
      "project_name": "Interactive Form",
      "description": "enhance a form so that it’s engaging, interactive, and easy to use.",
-     "technologies": "",
+     "technologies": ["javascript", "css", "html", "jquery"],
      "live_link":"https://wilcapre.github.io/project3.1/",
      "github_link":"https://github.com/wilcapre/project3.1",
-     "image_urls": ["public/img/project_3.png"]
+     "image_urls": ["public/img/project_3.png",
+                    "public/img/project_1.png",
+                    "public/img/project_4.png",
+                    "public/img/project_5.png"
+                    ]
     },
 
     {"id": 3,       
      "project_name":"OOP Game Show App",
      "description":"A player tries to guess the phrase by selecting individual letters from an onscreen keyboard.",
-     "technologies": "",
+     "technologies": ["javascript", "css", "html", "jquery"],
      "live_link":"https://wilcapre.github.io/project-4/",
      "github_link":"https://github.com/wilcapre/project-4",
-     "image_urls": ["public/img/project_4.png"]
+     "image_urls": ["public/img/project_4.png",
+                    "public/img/project_2.png",
+                    "public/img/project_3.png",
+                    "public/img/project_1.png"
+                    ]
     },
 
      {"id": 4,      
       "project_name":"Public API Requests",
       "description":"Using JavaScript, you’ll create an employee directory by communicating with a third-party API ",
-      "technologies": "",
+      "technologies": ["javascript", "css", "html", "jquery", "api"],
       "live_link":"https://wilcapre.github.io/project5/",
       "github_link":"https://github.com/wilcapre/project5",
-      "image_urls": ["public/img/project_5.png"]
+      "image_urls": ["public/img/project_5.png",
+                     "public/img/project_4.png",
+                     "public/img/project_3.png",
+                     "public/img/project_2.png"
+                    ]
      }
 ]
 }
