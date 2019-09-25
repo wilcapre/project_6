@@ -1,6 +1,11 @@
 
+body {
+  background-color: rgb(152, 152, 179); 
+}
+
 h1,h2,h3,h4,h5,p{
-  font-family: 'Merriweather', serif;
+  font-family: 'Tangerine', cursive;
+
 }
 
   h5{
@@ -18,8 +23,9 @@ h1,h2,h3,h4,h5,p{
   }
 
   p{
-    font-size: 15px;
+    font-size: 20px;
     color: #666;
+  
   }
 
 .round{
@@ -27,7 +33,7 @@ h1,h2,h3,h4,h5,p{
 }
 
 .text-light{
-  color: #666;
+  color: rgb(46, 44, 44);
 }
 
 .button{
@@ -52,14 +58,14 @@ a:hover{
   margin-bottom: 1rem;
   border: solid 4px #fefefe;
   border-radius: 0;
-  box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
+  box-shadow: 0 0 0 1px rgba(201, 163, 231, 0.2);
   line-height: 0;
 }
 
 .portfolio-me{
   padding: 20px;
   background: #121213;
-  color: #fff;
+  color: rgb(201, 90, 90);
   box-shadow: none !important;
 }
 
@@ -103,7 +109,7 @@ a:hover{
 }
 
 .portfolio-intro p{
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid #ca42ad;
   padding-bottom: 40px;
 }
 
@@ -147,4 +153,10 @@ a:hover{
 
 .portfolio-bio{
     line-height: 25px;
+}
+
+.thumbnail {
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 }
