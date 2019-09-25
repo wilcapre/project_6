@@ -8,33 +8,26 @@ block content
       .cell.small-6.medium-9.large-9
 
         //- Use interpolation to dynamically add the project title.
-        h1 Title #{project image}
+        h1 #{project.project_name}
 
         //- Use interpolation to dynamically add the project description.
-        p.lead.text-light
-          | Description
-           In this project, you'll create a gorgeous portfolio site to showcase the great projects you've built. 
-           The site will contain a modern landing page, an about page where you'll have a chance to share contact info, 
-           practice your elevator pitch and talk a little about yourself, and a series of project pages to show off and 
-           detail at least your first five projects from this Techdegree.
-           You'll create a JSON file to store all the data about the projects you've created.
-           You'll use Pug to complete provided templates that utilize the JSON to generate the markup 
-           that is ultimately displayed in the browser.
+        p.lead.text-light #{project.description}
 
       .cell.portfolio-meta.small-6.medium-2.large-3
         h6 Technologies
 
+
         //- Use an `each` iterator to replace the li tags below and interpolation to dynamically add the technologies used in each project.
         ul
-          li HTML
-          li CSS
-          li JavaScript
+          each technology in project.technologies
+            li= technology
+          
 
         //- Use template literals and interpolation to add URLs to the hrefs below so they link to the repo and the live version of each project.
-        a.button.expanded(href='') Live Demo
-        a.button.expanded(href='') GitHub Repo
+        a.button.expanded(href=`${project.live_link}` target='_blank') Live Demo
+        a.button.expanded(href=`${project.github_link}` target='_blank') GitHub Repo
     
     //- Replace the URLs in the src attributes below with template literals and interpolation to dynamically add three project images.  You only have to add one image.  But adding more images to show your app in different states demonstrates a level of thoroughness and professionalism that potential employers will like to see. 
-    img.image(src='https://placehold.it/1200x550')
-    img.image(src='https://placehold.it/1200x550')
-    img.image(src='https://placehold.it/1200x550')
+    img.image(src=`/${project.image_urls[0]}`)
+    img.image(src=`/${project.image_urls[1]}`)
+    img.image(src=`/${project.image_urls[2]}`)
