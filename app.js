@@ -10,6 +10,7 @@ app.set('view engine', 'pug');
 app.use('/static', express.static('public'));
 
 app.get('/', (req,res) => {
+    console.log('index');
     res.render('index', {projects});
     
 });
@@ -17,10 +18,34 @@ app.get('/about', (req,res) => {
     res.render('about');
 });
 
-app.get('/projects/:id', (req,res) => {
-    const {id} = req.params
+// app.get('/projects/', (req,res) => {
+//     // res.render();
+//     console.warn('lll');
+//         const err = new Error('Does not exist');
+//         err.status = 404;
+//         next (err);
+
+// });
+
+// app.get('*', (req,res) => {
+//     res.status(404).send("Doesn't exist");
+
+// })
+
+app.get('/projects/:id', (req,res,next) => {
+    const id = req.params.id;
     const project = projects[id]
-    res.render('project', {project});
+    console.warn(project);
+    if (id < projects.length) {
+      res.render('project', {project});
+    } else {
+      res.status(404).send("Doesn't exist");
+    }
+    // if(id > projects.length - 1) {
+    // next();
+    // }
+    
+    
     
 });
 
